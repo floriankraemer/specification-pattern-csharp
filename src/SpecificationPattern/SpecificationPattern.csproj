@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Phauthentic.Specification</RootNamespace>
+    <AssemblyName>Phauthentic.Specification</AssemblyName>
+    <PackageId>Phauthentic.Specification</PackageId>
+    <Authors>Florian Krämer</Authors>
+    <Description>A C# implementation of the Specification Pattern.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright (c) Florian Krämer</Copyright>
+    <RepositoryUrl>https://github.com/Phauthentic/specification-pattern-csharp</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
