@@ -1,4 +1,4 @@
-# OffenerPostenbuchhaltung / Mahnwesen-Beispiel (Deutsch)
+# Buchhaltung / Mahnwesen-Beispiel (Deutsch)
 
 Vollständig deutschsprachige Fassung des [OpenItemAccounting-Beispiels](../OpenItemAccounting/README.md).
 Klassennamen, Bezeichner und Kommentare sind komplett auf Deutsch gehalten.
