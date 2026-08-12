@@ -6,7 +6,8 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <IsPackable>false</IsPackable>
-    <RootNamespace>Phauthentic.Specification.Tests</RootNamespace>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Phauthentic.Specification.Examples.OpenItemAccounting.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\examples\OpenItemAccounting\OpenItemAccounting.csproj" />
     <ProjectReference Include="..\..\src\SpecificationPattern\SpecificationPattern.csproj" />
   </ItemGroup>
 

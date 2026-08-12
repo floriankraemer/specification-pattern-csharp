@@ -1,4 +1,4 @@
-.PHONY: help build up down shell restore test format format-check run-example check all
+.PHONY: help build up down shell restore test test-coverage format format-check run-example check all
 
 # Default target
 help: ## Show this help message
@@ -26,6 +26,11 @@ restore: up ## Restore NuGet dependencies
 
 test: up restore ## Run the xUnit test suite
 	docker compose exec dotnet dotnet test
+
+test-coverage: up restore ## Run tests with coverage and write an HTML report to coverage/
+	docker compose exec dotnet dotnet tool restore
+	docker compose exec dotnet dotnet test --collect:"XPlat Code Coverage" --results-directory ./coverage/raw
+	docker compose exec dotnet dotnet tool run reportgenerator -reports:coverage/raw/**/coverage.cobertura.xml -targetdir:coverage/report -reporttypes:Html
 
 format: up restore ## Apply dotnet format code style fixes
 	docker compose exec dotnet dotnet format
